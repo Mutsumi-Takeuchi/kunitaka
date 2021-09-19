@@ -173,7 +173,7 @@ const init = async () => {
     await showIcons(list3, "kidssafe2021_icon.png");
 
     //不審者情報
-    const listfusinsya = CSV.toJSON(await CSV.fetch("./fusinnsya.csv"));
+    const listfusinsya = CSV.toJSON(await CSV.fetch("fusinnsya.csv"));
     await showIcons(listfusinsya, "fusinsya.png");
 
     // ドローン写真

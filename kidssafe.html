@@ -168,6 +168,8 @@ const init = async () => {
     console.log(list);
     showIcons(list, "kidssafe_icon.png");
 
+    <input type="checkbox" name="ck01" value="1" checked>男性
+
     // 危険箇所2021
     const list3 = CSV.toJSON(await CSV.fetch("./kidssafe2021.csv"));
     await showIcons(list3, "kidssafe2021_icon.png");

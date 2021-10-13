@@ -171,15 +171,16 @@ const init = async () => {
     console.log(list);
     showIcons(list, "kidssafe_icon.png");
  
-    input({
-
-        "radio":{
-
-        }
-
-    });
+    //const input("radio","kidssafe2021","kidssafe2021","disabled","kidssafe2021");
     //<input type="radio" name="gender" value="male" disabled/>男性<br>
     //<input type="checkbox" name="course" value="html">HTML
+    const inputElem = document.getElementById("example-id");
+    // 値を埋め込む先
+    const currentLengthElem = document.getElementById("current-length");
+
+    inputElem.addEventListener('input', (event) => {
+  currentLengthElem.innerText = event.target.value.length;
+});
     
 
     // 危険箇所2021

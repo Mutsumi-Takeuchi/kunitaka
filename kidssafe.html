@@ -1,4 +1,7 @@
 <meta charset="utf-8"><script type="module">
+
+
+
 import { style } from "https://js.sabae.cc/stdom.js";
 import L from "https://code4sabae.github.io/leaflet-mjs/leaflet.mjs";
 import { Geo3x3 } from "https://geo3x3.com/Geo3x3.js";
@@ -167,8 +170,17 @@ const init = async () => {
     }
     console.log(list);
     showIcons(list, "kidssafe_icon.png");
+ 
+    input({
 
-    <input type="checkbox" name="ck01" value="1" checked>男性
+        "radio":{
+
+        }
+
+    });
+    //<input type="radio" name="gender" value="male" disabled/>男性<br>
+    //<input type="checkbox" name="course" value="html">HTML
+    
 
     // 危険箇所2021
     const list3 = CSV.toJSON(await CSV.fetch("./kidssafe2021.csv"));
